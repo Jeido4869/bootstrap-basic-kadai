@@ -19,12 +19,12 @@
     <main>
     <!-- カールセル開始 -->
      <!-- carousel クラス と slide クラスを適用します -->
-     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">      
+     <div id="myCarousel" class=" carousel slide carousel-fade" data-bs-ride="carousel">      
        <!-- これ以降がカルーセルの内部 -->
       <div class="carousel-inner">
 
         <!--カルーセルの一枚目には activeクラスを設定  -->
-        <div class="carousel-item active" data-bs-interval="10000">
+        <div class="carousel-item active" >
 
           <!--カルーセルの一枚目の背景画の設定  -->
           <img src="img/top_1.jpg" alt="サンプル画像1">
@@ -33,7 +33,7 @@
           <div class="container">
 
             <!-- 一枚目のカルーセルのタイトルと説明文 -->
-            <div class="carousel-caption" data-bs-interval="2000">
+            <div class="carousel-caption" >
               <h1>Example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
                 metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -65,11 +65,11 @@
             </div>
           </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
