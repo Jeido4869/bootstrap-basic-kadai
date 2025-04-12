@@ -18,14 +18,13 @@
   <body>
     <main>
     <!-- カールセル開始 -->
-     <!-- carousel クラス と slide クラスを適用します(自動再生) -->
-   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- これ以降がカルーセルの内部 -->
+     <!-- carousel クラス と slide クラスを適用します -->
+     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">      
+       <!-- これ以降がカルーセルの内部 -->
       <div class="carousel-inner">
 
         <!--カルーセルの一枚目には activeクラスを設定  -->
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="10000">
 
           <!--カルーセルの一枚目の背景画の設定  -->
           <img src="img/top_1.jpg" alt="サンプル画像1">
@@ -33,8 +32,8 @@
           <!-- 中央揃え -->
           <div class="container">
 
-            <!-- 1枚目のカルーセルのタイトルと説明文 -->
-            <div class="carousel-caption">
+            <!-- 一枚目のカルーセルのタイトルと説明文 -->
+            <div class="carousel-caption" data-bs-interval="2000">
               <h1>Example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
                 metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -44,7 +43,7 @@
         </div>
         <!-- 2枚目のカルーセル -->
         <div class="carousel-item">
-          <img src="img/top_2.jpg" alt="サンプル画像2">
+          <img src="img/top_2.jpg" class="d-block w-100" alt="サンプル画像2">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -56,7 +55,7 @@
         </div>
           <!-- 3枚目のカルーセル -->
         <div class="carousel-item">
-          <img src="img/top_3.jpg" alt="サンプル画像3">
+          <img src="img/top_3.jpg" class="d-block w-100" alt="サンプル画像3">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -65,11 +64,15 @@
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
-        </div>
-        
       </div>
-      <!-- インジケーターのボタン -->
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!-- カールセル終了 -->
 
